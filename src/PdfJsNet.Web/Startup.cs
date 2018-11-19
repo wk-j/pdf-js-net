@@ -41,10 +41,14 @@ namespace PdfJsNet.Web {
             defaultOptions.DefaultFileNames.Add("index.html");
             defaultOptions.FileProvider = new EmbeddedFileProvider(asm, $"{asmName}.viewer");
 
+            var wwwroot = new PhysicalFileProvider(env.WebRootPath);
+            var compositeProvider =
+                new CompositeFileProvider(wwwroot, new EmbeddedFileProvider(asm, $"{asmName}.viewer"));
+
             app
               .UseDefaultFiles(defaultOptions)
               .UseStaticFiles(new StaticFileOptions {
-                  FileProvider = new EmbeddedFileProvider(asm, $"{asmName}.viewer")
+                  FileProvider = compositeProvider
               });
 
 
