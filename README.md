@@ -20,6 +20,7 @@ var asmName = asm.GetName().Name;
 var defaultOptions = new DefaultFilesOptions();
 defaultOptions.DefaultFileNames.Clear();
 defaultOptions.DefaultFileNames.Add("index.html");
+
 var wwwroot = new PhysicalFileProvider(env.WebRootPath);
 var compositeProvider = new CompositeFileProvider(wwwroot, new EmbeddedFileProvider(asm, $"{asmName}.viewer"));
 
