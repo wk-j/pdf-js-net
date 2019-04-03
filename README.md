@@ -1,5 +1,6 @@
 ## PDF .NET
 
+[![Build Status](https://dev.azure.com/wk-j/pdf-js-net/_apis/build/status/wk-j.pdf-js-net?branchName=master)](https://dev.azure.com/wk-j/pdf-js-net/_build/latest?definitionId=40&branchName=master)
 [![NuGet](https://img.shields.io/nuget/v/wk.PdfJsNet.svg)](https://www.nuget.org/packages/wk.PdfJsNet)
 
 Embed pdf.js inside .NET DLL
