@@ -1,4 +1,8 @@
-## PDF .NET
+<p align="center">
+    <img src="resource/logo.png" />
+</p>
+
+#
 
 [![Actions](https://github.com/wk-j/pdf-js-net/workflows/NuGet/badge.svg)](https://github.com/wk-j/pdf-js-net/actions)
 [![NuGet](https://img.shields.io/nuget/v/wk.PdfJsNet.svg)](https://www.nuget.org/packages/wk.PdfJsNet)
@@ -6,17 +10,13 @@
 
 Embed pdf.js inside .NET dll
 
-<p align="center">
-    <img src="resource/logo.png" />
-</p>
-
-## Installation
+# Installation
 
 ```bash
 dotnet add package wk.PdfJsNet
 ```
 
-## Usage
+# Usage
 
 Load pdf.js with EmbeddedFileProvider in ASP.NET Core
 
@@ -37,7 +37,7 @@ app
   });
 ```
 
-Test
+# Test
 
 ```bash
 dotnet run
