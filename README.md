@@ -4,7 +4,7 @@
 [![NuGet](https://img.shields.io/nuget/v/wk.PdfJsNet.svg)](https://www.nuget.org/packages/wk.PdfJsNet)
 [![GitHub release](https://img.shields.io/github/release/wk-j/pdf-js-net.svg)](https://github.com/wk-j/pdf-js-net/releases)
 
-Embed pdf.js inside .NET DLL
+Embed pdf.js inside .NET dll
 
 <p align="center">
     <img src="resource/logo.png" />
@@ -18,7 +18,7 @@ dotnet add package wk.PdfJsNet
 
 ## Usage
 
-Load pdf.js with EmbeddedFileProvider
+Load pdf.js with EmbeddedFileProvider in ASP.NET Core
 
 ```csharp
 var asm = typeof(Viewer).Assembly;
@@ -40,5 +40,6 @@ app
 Test
 
 ```bash
+dotnet run
 open http://localhost:5000/web/viewer.html?file=/001.pdf
 ```
